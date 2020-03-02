@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+h2 {
+    font-family: Playlist;
+
+}
+
+@font-face {
+    font-family: Playlist;
+    src: url(/fonts/Playlist Script.otf);
+    font-style: normal;
+}
+
+p {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.title,
+.header {
+    font-family: Playlist;
+}
+
+.header {
+    font-size: 60px;
+}
+
+#top {
+    background-image: url(/images/x1.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: 0 0;
+}
