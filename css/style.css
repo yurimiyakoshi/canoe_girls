@@ -18,9 +18,11 @@ h2 {
     src: url(fonts/Playlist Script.otf) format("truetype");
 }
 
+/*
 p {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
+*/
 
 .title,
 .header {
