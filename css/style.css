@@ -5,16 +5,12 @@
 }
 
 body {
-    font-family: sans-serif ;
+    font-family: sans-serif;
 }
 
 @font-face {
     font-family: Playlist;
     src: url(fonts/Playlist Script.otf) format("truetype");
-}
-
-h2 {
-    font-family: Playlist;
 }
 
 /*
