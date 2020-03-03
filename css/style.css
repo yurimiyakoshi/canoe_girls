@@ -265,6 +265,12 @@ hr.sns_box_under {
     font-size: 80px;
 }
 
+.sns {
+    padding-top: 1000px;
+    width: 500px;
+    margin: 0 auto;
+}
+
 .sns-title {
     margin-top: 800px;
     position: relative;
@@ -298,22 +304,23 @@ hr.sns_box_under {
 }
 
 
-/* sns */
+/* snsボタンたち */
+
 /* ボタン全体 */
-.flowbtn6 {
-    border-radius: 13px;
+.flowbtn {
+    border-radius: 15px;
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 33px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
     color: #fff !important;
     transition: .5s;
     text-decoration: none;
 }
 
 /* アイコンをど真ん中に*/
-.flowbtn6 i {
+.flowbtn i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -324,49 +331,37 @@ hr.sns_box_under {
 
 /* ulタグの内側余白を０にする */
 /*
-ul.snsbtniti {
+ul.snsbtn {
     padding: 0 !important;
 }
 */
 
-/* アイコンボタン全体の位置 */
-/*
-.snsbtniti {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-*/
-
 /* アイコンボタン同士の余白 */
-/*
-.snsbtniti li {
-    flex: 0 0 33%;
+.snsbtn li {
     text-align: center !important;
 }
-*/
 
 /* アイコンボタンにマウスを乗せた時 */
-.flowbtn6:hover {
+.flowbtn:hover {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
 
 /* Instagramアイコン位置 */
-.insta_btn6 .fa-instagram {
-    font-size: 40px;
+.insta .fa-instagram {
+    font-size: 65px;
 }
 
 /* Instagram紫グラデ背景 */
-.insta_btn6 {
+.insta {
     background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
     background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
     overflow: hidden;
 }
 
 /* Instagramオレンジグラデ背景 */
-.insta_btn6:before {
+.insta:before {
     content: '';
     position: absolute;
     top: 27px;
@@ -378,11 +373,33 @@ ul.snsbtniti {
 }
 
 /* Twitter */
-.fl_tw1 {
+.twitter {
     background: #55acee;
 }
 
 /* Facebook */
-.fl_fb1{
-background:#3b5998;
+.facebook {
+    background: #3b5998;
+}
+
+/* LINE */
+.line {
+    font-size: 95px;
+    background: #fff;
+}
+
+.fa-line {
+    color: #00c300;
+}
+
+/* flexbox */
+ul.snsbtn {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
