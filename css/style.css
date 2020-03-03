@@ -25,11 +25,79 @@ p {
 }
 
 .header {
-    font-size: 60px;
+    font-size: 140px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    color: #BC005A;
 }
 
 #top {
-    background-image: url(/images/x1.png);
+    background-image: url(/images/top1.png);
+    position: relative;
+}
+
+#messege img {
+    margin: 0 auto;
+    display: block;
+}
+
+.title{
+    font-size: 100px;
+    border-bottom: 4px solid white;
+}
+
+.box{
+   background-color: #BC005A;
+    color: #fff;
+}
+
+#about {
+    background-image: url(/images/bg2.png);
+    position: relative;
+}
+
+#about .box{
+    width: 700px;
+}
+
+p.text{
+    padding: 50px;
+    font-size: 30px;
+}
+
+#about img {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+#about .title{
+   padding-left: 30px;
+    padding-top: 30px;
+}
+
+#results {
+    background-image: url(/images/bg3.png);
+}
+
+#blog {
+    background-image: url(/images/bg4.png);
+}
+
+#recruit {
+    background-image: url(/images/bg5.png);
+}
+
+#movie {
+    background-image: url(/images/bg6.png);
+}
+
+#photos {
+    background-image: url(/images/bg7.png);
+}
+
+.section {
     background-size: cover;
     height: 100vh;
     background-position: 0 0;
