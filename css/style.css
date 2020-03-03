@@ -65,10 +65,16 @@ p {
     /*    position: relative;*/
 }
 
-#about img {
+#about .text-img{
     position: absolute;
     top: 300px;
     right: 100px;
+}
+
+#about .front-img {
+    position: absolute;
+    top: 1050px;
+    right: -50px;
 }
 
 #about .box {
@@ -101,10 +107,16 @@ hr.about_box_under {
     background-image: url(/images/bg3.png);
 }
 
-#results img {
+#results .text-img{
     position: absolute;
     top: 300px;
     left: 100px;
+}
+
+#results .front-img {
+    position: absolute;
+    top: 1000px;
+    left: -180px;
 }
 
 #results .box {
@@ -142,10 +154,16 @@ hr.results_box_under {
     background-image: url(/images/bg4.png);
 }
 
-#blog img {
+#blog .text-img{
     position: absolute;
     top: 350px;
     left: 100px;
+}
+
+#blog .front-img {
+    position: absolute;
+    top: 500px;
+    right: -150px;
 }
 
 #blog .box {
@@ -212,12 +230,18 @@ hr.recruit_box_under {
     float: left;
 }
 
+#recruit .front-img {
+    position: absolute;
+    top: 1010px;
+    left: -20px;
+}
+
 #movie {
     background-image: url(/images/bg6.png);
     color: #BC005A;
 }
 
-#movie img {
+#movie .text-img {
     position: absolute;
     top: 300px;
     right: 100px;
@@ -400,6 +424,7 @@ ul.snsbtn {
     display: -o-flex;
     display: flex;
     justify-content: space-around;
+    -ms-align-items: center;
     align-items: center;
     list-style: none;
 }
