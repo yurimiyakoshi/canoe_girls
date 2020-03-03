@@ -7,7 +7,7 @@
 
     <!--  fullscreen.js  -->
     <link rel="stylesheet" href="css/fullpage.min.css">
-<!--   -->
+    <!--   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--    <script src="js/easings.min.js"></script>-->
     <!--    <script src="js/scrolloverflow.min.js"></script>-->
@@ -22,8 +22,6 @@
         <section class="section" id="top">
             <p class="header">Keio Girl's<br>Canoe Team</p>
             <div class="menu">
-                <span></span>
-                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -55,10 +53,11 @@
 
         <section class="section" id="results">
             <!--    日本一は、こんなにも近い。   -->
-            <img src="/images/text_nihon.png" alt="" width="320px">
-            <div>
+            <img src="/images/text_nihon.png" alt="" width="600px">
+            <div class="box">
                 <p class="title">Results</p>
-                <p>・世界カヌーマラソン アジア4位<br>
+                <hr class="results_box_under">
+                <p class="text">・世界カヌーマラソン アジア4位<br>
                     ・全日本選手権1000m 優勝</p>
             </div>
             <img src="" alt="">
@@ -68,11 +67,14 @@
 
         <section class="section" id="blog">
             <!--   そこには、アツくなれる仲間がいる    -->
-            <img src="/images/text_soko.png" alt="" width="320px">
+            <img src="/images/text_soko.png" alt="" width="650px">
             <img src="" alt="">
-            <div>
-                <p class="title">Official blog ▷</p>
-                <p>練習場所の荒川近くで、<br>
+            <div class="box">
+                <p class="title">Official blog
+                    <span class="triangle">▷</span>
+                </p>
+                <hr class="blog_box_under">
+                <p class="text">練習場所の荒川近くで、<br>
                     部員全員で寮生活。<br>
                     競技となれば、学年、男女は関係ない。</p>
             </div>
@@ -81,9 +83,10 @@
         </section>
 
         <section class="section" id="recruit">
-            <div>
+            <div class="box">
                 <p class="title">Recruit</p>
-                <p>・3/22(日)試乗会＠戸田公園<br>
+                <hr class="recruit_box_under">
+                <p class="text">・3/22(日)試乗会＠戸田公園<br>
                     ・4/2(木)夜 新歓コンパ＠渋谷<br>
                     ・4/3(金)夜 新歓コンパ＠渋谷<br>
                     ・4/10(金)夜 女子会＠日吉<br>
@@ -96,8 +99,11 @@
 
         <section class="section" id="movie">
             <!--  次は、キミの番だ。  -->
-            <img src="/images/text_tsugi.png" alt="" width="320px">
-            <p class="title">Movie</p>
+            <img src="/images/text_tsugi.png" alt="" width="650px">
+            <div class="movie-title">
+                <p class="title">Movie</p>
+                <hr class="movie_box_under">
+            </div>
             <div>
                 <!--      動画埋め込み      -->
             </div>
@@ -108,11 +114,20 @@
         <section class="section" id="photos">
             <span></span>
             <span></span>
-            <p class="title">Photos</p>
+            
+            <div class="photos-title">
+                <p class="title">Photos</p>
+                <hr class="photos_box_under">
+            </div>
             <div>
                 <!--      slick.js     -->
             </div>
-            <p class="title">contact</p>
+
+            <div class="sns-title">
+                <p class="title">Contact</p>
+                <hr class="sns_box_under">
+            </div>
+
             <!--      インスタ     -->
             <!--      fb          -->
             <!--      ツイッタ     -->
@@ -130,6 +145,9 @@
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>
