@@ -25,21 +25,43 @@
 
         <section class="section" id="top">
             <p class="header">Keio Girl's<br>Canoe Team</p>
+            <!--
             <div class="menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+-->
+            <ul id="menu">
+                <li data-menuanchor="1stPage" class="active"><a href="#1stPage">First section</a></li>
+                <li data-menuanchor="2ndPage"><a href="#2ndPage">Second section</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">Fourth section</a></li>
+                <li data-menuanchor="5thPage"><a href="#5thPage">Fifth section</a></li>
+                <li data-menuanchor="6thPage"><a href="#6thPage">Sixth section</a></li>
+                <li data-menuanchor="7thPage"><a href="#7thPage">Seventh section</a></li>
+                <li data-menuanchor="8thPage"><a href="#8thPage">Eighth section</a></li>
+            </ul>
+
+            <a href="#2ndPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="messege">
+           
+           <a href="#1stPage"><span class="up"></span></a>
+           
             <!--    キミは、ただの女子大生に向いてない。    -->
             <img src="/images/text_kimi.png" alt="" width="650px">
-            <span></span>
-            <span></span>
+
+            <a href="#3rdPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="about">
+          
+           <a href="#2ndPage"><span class="up"></span></a>
+           
             <!--   全員が初心者。大学からのスタート。     -->
             <img src="/images/text_zen.png" alt="" width="600px" class="text-img">
             <div class="box">
@@ -51,11 +73,15 @@
                     世界大会出場選手を輩出している。</p>
             </div>
             <img src="/images/sp1.png" alt="" width="650px" class="front-img">
-            <span></span>
-            <span></span>
+
+            <a href="#4thPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="results">
+          
+           <a href="#3rdPage"><span class="up"></span></a>
+           
             <!--    日本一は、こんなにも近い。   -->
             <img src="/images/text_nihon.png" alt="" width="600px" class="text-img">
             <div class="box">
@@ -65,11 +91,15 @@
                     ・全日本選手権1000m 優勝</p>
             </div>
             <img src="/images/sp2.png" alt="" width="1000px" class="front-img">
-            <span></span>
-            <span></span>
+
+            <a href="#5thPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="blog">
+           
+           <a href="#4thPage"><span class="up"></span></a>
+           
             <!--   そこには、アツくなれる仲間がいる    -->
             <img src="/images/text_soko.png" alt="" width="650px" class="text-img">
             <img src="/images/sp3.png" alt="" width="850px" class="front-img">
@@ -82,11 +112,15 @@
                     部員全員で寮生活。<br>
                     競技となれば、学年、男女は関係ない。</p>
             </div>
-            <span></span>
-            <span></span>
+
+            <a href="#6thPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="recruit">
+           
+           <a href="#5thPage"><span class="up"></span></a>
+           
             <div class="box">
                 <p class="title">Recruit</p>
                 <hr class="recruit_box_under">
@@ -97,11 +131,15 @@
                     ・試乗会 4月毎週土日＠戸田公園</p>
             </div>
             <img src="/images/sp4.png" alt="" width="850px" class="front-img">
-            <span></span>
-            <span></span>
+
+            <a href="#7thPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="movie">
+           
+           <a href="#6thPage"><span class="up"></span></a>
+           
             <!--  次は、キミの番だ。  -->
             <img src="/images/text_tsugi.png" alt="" width="650px" class="text-img">
             <div class="movie-title">
@@ -111,13 +149,14 @@
             <div class="youtube">
                 <iframe width="700" height="400" src="https://www.youtube.com/embed/VSMl6rTwrSY?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <span></span>
-            <span></span>
+
+            <a href="#8thPage"><span class="down"></span></a>
+
         </section>
 
         <section class="section" id="photos">
-            <span></span>
-            <span></span>
+           
+            <a href="#7thPage"><span class="up"></span></a>
 
             <div class="photos-title">
                 <p class="title">Photos</p>
@@ -149,9 +188,9 @@
 
                 </ul>
             </div>
-            
-            
-            
+
+
+
             <div class="footer">
                 <p>&copy; 2020 yuri miyakoshi</p>
             </div>
@@ -161,7 +200,9 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
+            });
         });
 
     </script>

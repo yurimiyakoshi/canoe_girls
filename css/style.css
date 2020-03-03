@@ -428,3 +428,33 @@ ul.snsbtn {
     align-items: center;
     list-style: none;
 }
+
+/* scroll button */
+
+a span.down {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 3px solid #BC005A;
+    border-bottom: 3px solid #BC005A;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+a span.up {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 3px solid #BC005A;
+    border-bottom: 3px solid #BC005A;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    box-sizing: border-box;
+}
