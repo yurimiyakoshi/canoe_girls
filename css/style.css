@@ -13,11 +13,7 @@ body {
     src: url(fonts/Playlist Script.otf) format("truetype");
 }
 
-/*
-p {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-}
-*/
+/* 共通 */
 
 .title,
 .header {
@@ -42,6 +38,7 @@ p {
 
 /* 上書き終わり */
 
+/* メインビジュアル #top */
 .header {
     font-size: 140px;
     position: absolute;
@@ -56,14 +53,15 @@ p {
 }
 
 .menu {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-color: #BC005A;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #BC005A;
     position: absolute;
     top: 100px;
     right: 80px;
 }
+/*
 
 span < .menu {
     position: absolute;
@@ -77,14 +75,24 @@ span < .menu {
     left: 50%;
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+*/
+
+/* 2 メッセージ #message */
+#messege {
+    position: relative;
 }
 
-#messege img {
-    margin: 0 auto;
-    display: block;
+#messege .text-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
+/* 3 About us #about */
 #about {
     background-image: url(/images/bg2.png);
     /*    position: relative;*/
@@ -127,6 +135,8 @@ hr.about_box_under {
     padding-bottom: 60px;
     font-size: 30px;
 }
+
+/* 4 結果 #results */
 
 #results {
     background-image: url(/images/bg3.png);
@@ -175,6 +185,8 @@ hr.results_box_under {
     float: left;
 }
 
+/* 5 ブログ #blog */
+
 #blog {
     background-image: url(/images/bg4.png);
 }
@@ -221,12 +233,14 @@ hr.blog_box_under {
     font-size: 30px;
 }
 
+/* 6 新歓情報 #recruit */
+
 #recruit {
     background-image: url(/images/bg5.png);
 }
 
 #recruit .box {
-    width: 700px;
+    width: 730px;
     margin-top: 560px;
     float: right;
 }
@@ -260,6 +274,8 @@ hr.recruit_box_under {
     top: 1010px;
     left: -20px;
 }
+
+/* 7 PV #movie */
 
 #movie {
     background-image: url(/images/bg6.png);
@@ -297,6 +313,8 @@ hr.sns_box_under {
     position: absolute;
     top: 100px;
 }
+
+/* 8 photos & contact #photos */
 
 #photos {
     background-image: url(/images/bg7.png);
@@ -453,6 +471,8 @@ ul.snsbtn {
     align-items: center;
     list-style: none;
 }
+
+/* snsボタンたち終わり */
 
 /* scroll button */
 
