@@ -503,3 +503,15 @@ a span.up {
     transform: rotate(135deg);
     box-sizing: border-box;
 }
+
+/* bgswitcher */
+
+.bg-slider {
+	width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

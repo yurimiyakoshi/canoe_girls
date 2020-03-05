@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="css/fullpage.min.css">
     <!--   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--  fullpage.jsのオプション  -->
     <!--    <script src="js/easings.min.js"></script>-->
     <!--    <script src="js/scrolloverflow.min.js"></script>-->
     <script src="js/fullpage.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!--  bgswitcher  -->
+    <script src="js/jquery.bgswitcher.js"></script>
 
     <!--  font awesome  -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -23,8 +28,8 @@
 <body>
     <div id="fullpage">
 
-        <section class="section" id="top">
-            <p class="header">Keio Girl's<br>Canoe Team</p>
+        <section class="section bg-slider" id="top">
+            <p class="header">Keio Girl's<br>&emsp;Canoe Team</p>
 
             <div class="menu">
                 <span></span>
@@ -48,7 +53,6 @@
         </section>
 
         <section class="section" id="messege">
-
             <a href="#1stPage"><span class="up"></span></a>
 
             <!--    キミは、ただの女子大生に向いてない。    -->
@@ -202,6 +206,13 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
+            });
+        });
+
+        // スライドショー //
+        $(document).ready(function() {
+            $('.bg-slider').bgSwitcher({
+                images: ['images/top1.png', 'images/top2.png', 'images/top3.png', 'images/top4.png', 'images/top5.png', ] // 切り替える背景画像を指定
             });
         });
 
