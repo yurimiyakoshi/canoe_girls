@@ -13,11 +13,17 @@ body {
     src: url(fonts/Playlist Script.otf) format("truetype");
 }
 
+@font-face {
+    font-family: Shelby;
+    src: url(fonts/Shelby.otf) format("truetype");
+}
+
+
 /* 共通 */
 
 .title,
 .header {
-    font-family: Playlist;
+    font-family: Playlist, Shelby;
 }
 
 .box {
