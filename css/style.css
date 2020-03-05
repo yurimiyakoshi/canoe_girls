@@ -18,6 +18,10 @@ body {
     src: url(fonts/Shelby.otf) format("truetype");
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* 共通 */
 
@@ -100,7 +104,7 @@ span < .menu {
 
 /* 3 About us #about */
 #about {
-    background-image: url(/images/bg2.png);
+    background-image: url(/images/bg2.jpg);
     /*    position: relative;*/
 }
 
@@ -146,7 +150,7 @@ hr.about_box_under {
 /* 4 結果 #results */
 
 #results {
-    background-image: url(/images/bg3.png);
+    background-image: url(/images/bg3.jpg);
 }
 
 #results .text-img {
@@ -196,7 +200,7 @@ hr.results_box_under {
 /* 5 ブログ #blog */
 
 #blog {
-    background-image: url(/images/bg4.png);
+    background-image: url(/images/bg4.jpg);
 }
 
 #blog .text-img {
@@ -247,7 +251,7 @@ hr.blog_box_under {
 /* 6 新歓情報 #recruit */
 
 #recruit {
-    background-image: url(/images/bg5.png);
+    background-image: url(/images/bg5.jpg);
 }
 
 #recruit .box {
@@ -290,7 +294,7 @@ hr.recruit_box_under {
 /* 7 PV #movie */
 
 #movie {
-    background-image: url(/images/bg6.jepg);
+    background-image: url(/images/bg6.jpg);
     color: #BC005A;
 }
 
@@ -328,7 +332,7 @@ hr.photos_box_under {
 /* 8 photos & contact #photos */
 
 #photos {
-    background-image: url(/images/bg7.png);
+    background-image: url(/images/bg7.jpg);
     color: #BC005A;
     position: relative;
 }
