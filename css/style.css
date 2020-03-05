@@ -48,7 +48,7 @@ body {
 }
 
 #top {
-    background-image: url(/images/top1.png);
+    background-image: url(/images/top1.jpg);
     position: relative;
 }
 
@@ -278,7 +278,7 @@ hr.recruit_box_under {
 /* 7 PV #movie */
 
 #movie {
-    background-image: url(/images/bg6.png);
+    background-image: url(/images/bg6.jepg);
     color: #BC005A;
 }
 
