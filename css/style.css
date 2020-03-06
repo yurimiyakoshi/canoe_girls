@@ -77,7 +77,7 @@ a {
 */
 
 .open {
-    z-index: 2;
+    z-index: 10000;
     position: fixed;
      top: 30px;
 }
