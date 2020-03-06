@@ -7,12 +7,12 @@
     <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
-    
+
     <!--  slick.js  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
-    
+
     <!--  fullscreen.js  -->
     <link rel="stylesheet" href="css/fullpage.min.css">
     <!--   -->
@@ -23,8 +23,9 @@
     <!--    <script src="js/scrolloverflow.min.js"></script>-->
     <script src="js/fullpage.min.js"></script>
 
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!--  bgswitcher  -->
     <!--    <script src="js/jquery.bgswitcher.js"></script>-->
 
@@ -40,6 +41,28 @@
 
 <body>
 
+   
+   <div class="open">
+                <span class="cls"></span>
+                <span>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#about" title="about">Sobre / About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" title="skills">Habilidades / Skills</a>
+                        </li>
+                        <li>
+                            <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#contact" title="contact">Contato / Contact</a>
+                        </li>
+                    </ul>
+                </span>
+                <span class="cls"></span>
+            </div>
+            
     <div id="fullpage">
 
         <section class="section bg-slider" id="top">
@@ -51,14 +74,13 @@
                 <li style="background-image:url(/images/top3.jpg);"></li>
                 <li style="background-image:url(/images/top4.jpg);"></li>
                 <li style="background-image:url(/images/top5.jpg);"></li>
-
             </ul>
 
+
+            <!--
             <div class="menu">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
+-->
 
             <!--
             <ul>
@@ -203,7 +225,7 @@
                     <li><img src="images/slick_sp6.jpg" alt="image06"></li>
                     <li><img src="images/slick_sp7.jpg" alt="image07"></li>
                     <li><img src="images/slick_sp8.jpg" alt="image08"></li>
-<!--                    <li><a href="#"><img src="images/slick_sp9.jpg" alt="image09"></a></li>-->
+                    <!--                    <li><a href="#"><img src="images/slick_sp9.jpg" alt="image09"></a></li>-->
                 </ul>
             </div>
 
@@ -267,13 +289,12 @@
                 touchEnabled: false
             });
         });
-        
-         // スライダー //
+
+        // スライダー //
         if (window.matchMedia('screen and (max-width:1024px)').matches) {
             // スマホレイアウト
             $(document).ready(function() {
-                $('.slider').slick({
-                });
+                $('.slider').slick({});
             });
             console.log('sp');
         } else {
@@ -286,9 +307,21 @@
                 });
             });
         }
-
+        
+        // menu //
+        $(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		});
+	});
     </script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-</body>
-
-</html>
+</body></html>
