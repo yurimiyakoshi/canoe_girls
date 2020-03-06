@@ -7,7 +7,12 @@
     <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
-
+    
+    <!--  slick.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    
     <!--  fullscreen.js  -->
     <link rel="stylesheet" href="css/fullpage.min.css">
     <!--   -->
@@ -21,13 +26,13 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--  bgswitcher  -->
-<!--    <script src="js/jquery.bgswitcher.js"></script>-->
+    <!--    <script src="js/jquery.bgswitcher.js"></script>-->
 
     <!--  font awesome  -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    
+
     <!--  bx-slider  -->
-    
+
     <script src="/js/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="/css/jquery.bxslider.css">
 
@@ -39,15 +44,15 @@
 
         <section class="section bg-slider" id="top">
             <p class="header">Keio Girl's<br>&emsp;Canoe Team</p>
-            
-            <ul class="slider">
-            <li style="background-image:url(/images/top1.jpg);"></li>
-        <li style="background-image:url(/images/top2.jpg);"></li>
-        <li style="background-image:url(/images/top3.jpg);"></li>
-        <li style="background-image:url(/images/top4.jpg);"></li>
-        <li style="background-image:url(/images/top5.jpg);"></li>
-        
-    </ul>
+
+            <ul class="bx-slider">
+                <li style="background-image:url(/images/top1.jpg);"></li>
+                <li style="background-image:url(/images/top2.jpg);"></li>
+                <li style="background-image:url(/images/top3.jpg);"></li>
+                <li style="background-image:url(/images/top4.jpg);"></li>
+                <li style="background-image:url(/images/top5.jpg);"></li>
+
+            </ul>
 
             <div class="menu">
                 <span></span>
@@ -55,7 +60,7 @@
                 <span></span>
             </div>
 
-<!--
+            <!--
             <ul>
                 <li data-menuanchor="1stPage" class="active"><a href="#1stPage">First section</a></li>
                 <li data-menuanchor="2ndPage"><a href="#2ndPage">Second section</a></li>
@@ -189,6 +194,17 @@
             </div>
             <div>
                 <!--      slick.js     -->
+                <ul class="slider">
+                    <li><img src="/images/slick_sp1.jpg" alt="image01"></li>
+                    <li><img src="/images/slick_sp2.jpg" alt="image01"></li>
+                    <li><img src="/images/slick_sp3.jpg" alt="image01"></li>
+                    <li><img src="/images/slick_sp4.jpg" alt="image01"></li>
+                    <li><img src="images/slick_sp5.jpg" alt="image05"></li>
+                    <li><img src="images/slick_sp6.jpg" alt="image06"></li>
+                    <li><img src="images/slick_sp7.jpg" alt="image07"></li>
+                    <li><img src="images/slick_sp8.jpg" alt="image08"></li>
+<!--                    <li><a href="#"><img src="images/slick_sp9.jpg" alt="image09"></a></li>-->
+                </ul>
             </div>
 
             <div class="sns-title">
@@ -230,18 +246,18 @@
             });
         });
 
-//        // スライドショー //
-//        $(document).ready(function() {
-//            $('.bg-slider').bgSwitcher({
-//                images: ['images/top1.jpg', 'images/top2.jpg', 'images/top3.jpg', 'images/top4.jpg', 'images/top5.jpg', ],
-//                // 切り替える背景画像を指定
-//                interval: 3000
-//            });
-//        });
+        //        // スライドショー //
+        //        $(document).ready(function() {
+        //            $('.bg-slider').bgSwitcher({
+        //                images: ['images/top1.jpg', 'images/top2.jpg', 'images/top3.jpg', 'images/top4.jpg', 'images/top5.jpg', ],
+        //                // 切り替える背景画像を指定
+        //                interval: 3000
+        //            });
+        //        });
 
         // bx-slider //
         $(document).ready(function() {
-            $('.slider').bxSlider({
+            $('.bx-slider').bxSlider({
                 mode: 'fade',
                 speed: 1200,
                 pause: 2700,
@@ -251,8 +267,28 @@
                 touchEnabled: false
             });
         });
+        
+         // スライダー //
+        if (window.matchMedia('screen and (max-width:1024px)').matches) {
+            // スマホレイアウト
+            $(document).ready(function() {
+                $('.slider').slick({
+                });
+            });
+            console.log('sp');
+        } else {
+            // PCレイアウト
+            console.log('pc');
+            $(document).ready(function() {
+                $('.slider').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                });
+            });
+        }
 
     </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 
 </html>

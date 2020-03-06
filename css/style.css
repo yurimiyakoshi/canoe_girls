@@ -349,13 +349,12 @@ hr.photos_box_under {
 }
 
 .sns {
-    padding-top: 360px;
+    padding-top: 80px;
     width: 260px;
     margin: 0 auto;
 }
 
 .sns-title {
-    margin-top: 270px;
     position: relative;
     float: right;
     width: 180px;
@@ -554,7 +553,7 @@ a span.up {
 }
 */
 
-.slider li {
+.bx-slider li {
   height: 100vh;
   background: center / cover no-repeat;
     z-index: 0;
@@ -571,3 +570,22 @@ a span.up {
   height: 100% !important;
   width: auto !important;
 }
+
+
+/* slick使ってくよ */
+.slider {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.slider {
+/*        margin-top: 40px;*/
+    }
+
+.slider img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* slick終わり */
