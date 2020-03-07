@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!--  bgswitcher  -->
     <!--    <script src="js/jquery.bgswitcher.js"></script>-->
 
@@ -41,28 +41,30 @@
 
 <body>
 
-   
-   <div class="open">
-                <span class="cls"></span>
-                <span>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#about" title="about">Sobre / About</a>
-                        </li>
-                        <li>
-                            <a href="#skills" title="skills">Habilidades / Skills</a>
-                        </li>
-                        <li>
-                            <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
-                        </li>
-                        <li>
-                            <a href="#contact" title="contact">Contato / Contact</a>
-                        </li>
-                    </ul>
-                </span>
-                <span class="cls"></span>
-            </div>
-            
+
+    <div class="open">
+        <span class="cls"></span>
+        <span>
+            <ul class="sub-menu sub">
+                <li>
+                    <a href="#about" title="about">Sobre / About</a>
+                </li>
+                <li>
+                    <a href="#skills" title="skills">Habilidades / Skills</a>
+                </li>
+                <li>
+                    <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
+                </li>
+                <li>
+                    <a href="#contact" title="contact">Contato / Contact</a>
+                </li>
+            </ul>
+        </span>
+        <span class="cls"></span>
+        <ul class="sub-menu screen">
+        </ul>
+    </div>
+
     <div id="fullpage">
 
         <section class="section bg-slider" id="top">
@@ -307,21 +309,23 @@
                 });
             });
         }
-        
+
         // menu //
         $(document).ready(function() {
-		$(document).delegate('.open', 'click', function(event){
-			$(this).addClass('oppenned');
-			event.stopPropagation();
-		})
-		$(document).delegate('body', 'click', function(event) {
-			$('.open').removeClass('oppenned');
-		})
-		$(document).delegate('.cls', 'click', function(event){
-			$('.open').removeClass('oppenned');
-			event.stopPropagation();
-		});
-	});
+            $(document).delegate('.open', 'click', function(event) {
+                $(this).addClass('oppenned');
+                $('.screen').addClass('oppenned');
+                event.stopPropagation();
+            })
+            $(document).delegate('body', 'click', function(event) {
+                $('.open').removeClass('oppenned');
+            })
+            $(document).delegate('.cls', 'click', function(event) {
+                $('.open').removeClass('oppenned');
+                event.stopPropagation();
+            });
+
+        });
     </script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 </body></html>

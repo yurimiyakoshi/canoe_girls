@@ -591,3 +591,24 @@ a span.up {
 }
 
 /* slick終わり */
+
+/* menu調整 */
+.screen {
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.oppenned .screen {
+  opacity: 1;
+    height: 140vh;
+    width: 140vh;
+    top: -190px;
+    right: -500px;
+    border-radius: 500px;
+    z-index: 1;
+}
+
+.oppenned .sub {
+    z-index: 3;
+}
