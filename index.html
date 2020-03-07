@@ -319,9 +319,11 @@
             })
             $(document).delegate('body', 'click', function(event) {
                 $('.open').removeClass('oppenned');
+                $('.screen').removeClass('oppenned');
             })
             $(document).delegate('.cls', 'click', function(event) {
                 $('.open').removeClass('oppenned');
+                $('.screen').removeClass('oppenned');
                 event.stopPropagation();
             });
 
