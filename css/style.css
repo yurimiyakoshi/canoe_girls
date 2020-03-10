@@ -309,6 +309,10 @@ hr.recruit_box_under {
     margin: 20px auto;
 }
 
+.pc-movie {
+    display: none;
+}
+
 hr.movie_box_under,
 hr.photos_box_under {
     background-color: #BC005A;
@@ -817,6 +821,110 @@ ul.sub-menu li {
         top: 200px;
         left: 320px;
         width: 550px;
+    }
+
+    /* 7 PV #movie */
+    /*
+    #movie {
+        background-image: url(/images/bg6.jpg);
+    }
+*/
+    #movie .text-img {
+        display: none;
+    }
+
+    .movie-title {
+        margin-top: 60px;
+    }
+
+    #movie .title {
+        padding-left: 320px;
+        font-size: 80px;
+    }
+
+    .youtube {
+        width: 700px;
+        height: 500px;
+    }
+
+    .sp-movie {
+        display: none;
+    }
+
+    .pc-movie {
+        display: block;
+    }
+
+    hr.movie_box_under,
+    hr.photos_box_under {
+        width: 320px;
+        top: 90px;
+        left: 260px;
+        height: 4px;
+    }
+
+    /* 8 photos & contact #photos */
+
+    #photos {
+        background-image: url(/images/bg7.jpg);
+        color: #BC005A;
+        position: relative;
+    }
+
+    .photos-title {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .photos-title .title {
+        padding-left: 50px;
+        font-size: 30px;
+    }
+
+    .sns {
+        padding-top: 60px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .sns-title {
+        position: relative;
+        float: right;
+        width: 180px;
+    }
+
+    .sns-title .title {
+        padding-left: 30px;
+        font-size: 30px;
+    }
+
+    hr.sns_box_under {
+        background-color: #BC005A;
+        width: 200px;
+        height: 1px;
+        position: absolute;
+        top: 40px;
+    }
+
+    .footer {
+        height: 50px;
+        background-color: #BC005A;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        color: #fff;
+        text-align: center;
+    }
+
+    .footer > p {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .section {
+        background-size: cover;
+        height: 100vh;
+        background-position: 0 0;
     }
 
 }
