@@ -69,7 +69,7 @@ h1{
 		right: 0;
 		top: 0;
 		position: absolute;
-		background-color: rgba(38, 84, 133, 0.54);
+		background-color: rgba(145, 2, 155, 0.54);
 		border-radius: 50%;
 		z-index: 18;
 		overflow: hidden;
@@ -102,10 +102,10 @@ h1{
 				color: #fff;
 				font-family: 'Lato', Arial, Helvetica, sans-serif;
 				font-size: 16px;
-				width: 100%;
+				width: 50%;
 				display: block;
 				float: left;
-				line-height: 40px;
+				line-height: 30px;
 			}
 		}
 	}
@@ -138,7 +138,7 @@ h1{
 			transform: rotate(-45deg) translateY(-10px) translateX(10px);
 		}
 		li{
-			margin-right: 168px;
+			margin-right: 140px;
 		}
 	}
 .button{
