@@ -63,19 +63,6 @@ a {
     position: relative;
 }
 
-
-/*
-.menu {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #BC005A;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-}
-*/
-
 .open {
     z-index: 10000;
     position: fixed;
@@ -618,4 +605,15 @@ a span.up {
 ul.sub-menu li {
     width: 45%;
     padding: 5px 10px;
+}
+
+/* タブレット縦・スマートフォン横 */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* タブレット横・デスクトップ */
+
+@media screen and (min-width: 769px) {
+    
 }
