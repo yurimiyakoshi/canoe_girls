@@ -47,16 +47,19 @@
         <span>
             <ul class="sub-menu sub">
                 <li>
-                    <a href="#about" title="about">About</a><a href="#results" title="results">Results</a>
+                    <a href="#3rdPage" title="about">About</a><a href="#4thPage" title="results">Results</a>
                 </li>
                 <li>
-                    <a href="#blog" title="blog">Blog</a><a href="#recruit" title="recruit">Recruit</a>
+                    <a href="#5thPage" title="blog">Blog</a><a href="#6thPage" title="recruit">Recruit</a>
                 </li>
                 <li>
-                    <a href="#movie" title="movie">Movie</a><a href="#photos" title="photos">Photos</a>
+                    <a href="#7thPage" title="movie">Movie</a><a href="#8thPage" title="photos">Photos</a>
                 </li>
                 <li>
-                    <a href="#photos" title="photos">Contact</a>
+                    <a href="#8thPage" title="contact" class="sp">Contact</a>
+                </li>
+                <li>
+                    <a href="#9thPage" title="contact" class="pc">Contact</a>
                 </li>
             </ul>
         </span>
@@ -281,28 +284,24 @@
     </div>
 
     <script type="text/javascript">
-         if (window.matchMedia('screen and (max-width:1024px)').matches) {
-            // スマホレイアウト
-            $(document).ready(function() {
+        $(document).ready(function($) {
+            //769px以上の場合
+            if (window.matchMedia('(min-width: 769px)').matches) {
+                $('#fullpage').fullpage({
+                    anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
+                });
+                $('.sp').hide();
+                console.log('pc');
+                //768px以下の場合
+            } else {
                 $('#fullpage').fullpage({
                     anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
                 });
+                $('.pc').hide();
+                $('.pc').removeClass();
                 console.log('sp');
-            });
-         }else {
-                console.log('pc');
-                // PCレイアウト
-                $(document).ready(function() {
-                    $('#fullpage').fullpage({
-                        anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
-                    });
-                });
-        }
-        //        $(document).ready(function() {
-        //            $('#fullpage').fullpage({
-        //                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
-        //            });
-        //        });
+            };
+        });
 
         //        // スライドショー //
         //        $(document).ready(function() {
@@ -327,22 +326,22 @@
         });
 
         // スライダー //
-//                if (window.matchMedia('screen and (max-width:1024px)').matches) {
+        // if (window.matchMedia('screen and (max-width:1024px)').matches) {
         //            // スマホレイアウト
         $(document).ready(function() {
             $('.slider').slick({});
         });
-//                    console.log('sp');
-//                } else {
-//                    // PCレイアウト
-//                    console.log('pc');
-//                    $(document).ready(function() {
-//                        $('.slider').slick({
-//                            slidesToShow: 4,
-//                            slidesToScroll: 1
-//                        });
-//                    });
-//                }
+        //                    console.log('sp');
+        //                } else {
+        //                    // PCレイアウト
+        //                    console.log('pc');
+        //                    $(document).ready(function() {
+        //                        $('.slider').slick({
+        //                            slidesToShow: 4,
+        //                            slidesToScroll: 1
+        //                        });
+        //                    });
+        //                }
 
         // menu //
         $(document).ready(function() {

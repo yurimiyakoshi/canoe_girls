@@ -380,8 +380,7 @@ hr.sns_box_under {
     font-size: 12px;
 }
 
-.pc,
-#contact {
+.pc {
     display: none;
 }
 
@@ -896,7 +895,6 @@ ul.sub-menu li {
     .pc {
         display: block;
     }
-
 
     #contact {
         background-image: url(/images/bg7.jpg);
