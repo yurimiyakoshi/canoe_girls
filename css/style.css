@@ -208,7 +208,7 @@ hr.results_box_under {
 #blog .box {
     width: 320px;
     margin-top: 400px;
-    height: 200px;
+/*    height: 200px;*/
 }
 
 #blog .title {
@@ -736,5 +736,48 @@ ul.sub-menu li {
         padding: 30px 30px 65px 50px;
     }
 
+    /* 5 ブログ #blog */
+    /*
+    #blog {
+        background-image: url(/images/bg4.jpg);
+    }
+*/
+    #blog .text-img {
+        left: 880px;
+        width: 500px;
+    }
 
+    #blog .front-img {
+        top: 320px;
+        right: 320px;
+        width: 600px;
+    }
+
+    #blog .box {
+        width: 620px;
+        margin-left: 270px;
+        margin-top: 300px;
+    }
+
+    #blog .title {
+        padding-top: 40px;
+        font-size: 45px;
+        padding-left: 50px;
+    }
+
+    span.triangle {
+        font-size: 24px;
+    }
+
+    hr.blog_box_under {
+        width: 360px;
+        top: 100px;
+    }
+
+    #blog p.text {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 40px;
+        padding: 10px 30px 65px 65px;
+    }
 }
