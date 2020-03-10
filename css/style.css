@@ -208,7 +208,7 @@ hr.results_box_under {
 #blog .box {
     width: 320px;
     margin-top: 400px;
-/*    height: 200px;*/
+    /*    height: 200px;*/
 }
 
 #blog .title {
@@ -780,4 +780,43 @@ ul.sub-menu li {
         line-height: 40px;
         padding: 10px 30px 65px 65px;
     }
+
+    /* 6 新歓情報 #recruit */
+
+    /*
+    #recruit {
+        background-image: url(/images/bg5.jpg);
+    }
+*/
+
+    #recruit .box {
+        width: 600px;
+        margin-right: 250px;
+        margin-top: 360px;
+    }
+
+    #recruit .title {
+        padding-right: 120px;
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    hr.recruit_box_under {
+        width: 300px;
+        top: 92px;
+    }
+
+    #recruit p.text {
+        font-size: 22px;
+        letter-spacing: 1.6px;
+        line-height: 45px;
+        padding: 20px 30px 65px 90px;
+    }
+
+    #recruit .front-img {
+        top: 200px;
+        left: 320px;
+        width: 550px;
+    }
+
 }
