@@ -96,7 +96,6 @@ a {
 /* 3 About us #about */
 #about {
     background-image: url(/images/bg2.jpg);
-    /*    position: relative;*/
 }
 
 #about .text-img {
@@ -609,11 +608,92 @@ ul.sub-menu li {
 
 /* タブレット縦・スマートフォン横 */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
+@media screen and (min-width: 481px) and (max-width: 768px) {}
 
 /* タブレット横・デスクトップ */
 
 @media screen and (min-width: 769px) {
-    
+
+    /* メインビジュアル #top */
+    .header {
+        font-size: 110px;
+        top: 125px;
+        left: 150px;
+    }
+
+    .open {
+        top: 30px;
+    }
+
+    .oppenned .sub-menu {
+        width: 600px;
+        height: 600px;
+    }
+
+    .sub-menu {
+        height: 0;
+        width: 0;
+        right: -100px;
+        top: -100px;
+    }
+
+    /* menu調整 */
+    .oppenned .screen {
+        height: 140vw;
+        width: 140vw;
+        top: -60vw;
+        right: -35vw;
+        border-radius: 70vw;
+    }
+
+    .sub-menu li a {
+        font-size: 30px;
+    }
+
+    /* 2 メッセージ #message */
+    #messege .text-img {
+        width: 700px;
+    }
+
+    /* 3 About us #about */
+    #about {
+        background-image: url(/images/bg2.jpg);
+    }
+
+    #about .text-img {
+        top: 120px;
+        right: 380px;
+        width: 400px;
+    }
+
+    #about .box {
+        width: 500px;
+        margin-left: 320px;
+    }
+
+    #about .front-img {
+        top: 320px;
+        right: 360px;
+        width: 600px;
+    }
+
+    #about .title {
+        padding-top: 40px;
+        font-size: 40px;
+        padding-left: 50px;
+    }
+
+    hr.about_box_under {
+        width: 250px;
+        top: 90px;
+    }
+
+    #about p.text {
+        font-size: 18px;
+        letter-spacing: 1.4px;
+        line-height: 35px;
+        padding: 10px 30px 50px 50px;
+    }
+
+
 }
