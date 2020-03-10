@@ -281,11 +281,28 @@
     </div>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
+         if (window.matchMedia('screen and (max-width:480px)').matches) {
+            // スマホレイアウト
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
+                });
+                console.log('sp');
             });
-        });
+         }else {
+                console.log('pc');
+                // PCレイアウト
+                $(document).ready(function() {
+                    $('#fullpage').fullpage({
+                        anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
+                    });
+                });
+        }
+        //        $(document).ready(function() {
+        //            $('#fullpage').fullpage({
+        //                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
+        //            });
+        //        });
 
         //        // スライドショー //
         //        $(document).ready(function() {
@@ -310,22 +327,22 @@
         });
 
         // スライダー //
-        //        if (window.matchMedia('screen and (max-width:1024px)').matches) {
+//                if (window.matchMedia('screen and (max-width:1024px)').matches) {
         //            // スマホレイアウト
         $(document).ready(function() {
             $('.slider').slick({});
         });
-        //            console.log('sp');
-        //        } else {
-        //            // PCレイアウト
-        //            console.log('pc');
-        //            $(document).ready(function() {
-        //                $('.slider').slick({
-        //                    slidesToShow: 4,
-        //                    slidesToScroll: 1
-        //                });
-        //            });
-        //        }
+//                    console.log('sp');
+//                } else {
+//                    // PCレイアウト
+//                    console.log('pc');
+//                    $(document).ready(function() {
+//                        $('.slider').slick({
+//                            slidesToShow: 4,
+//                            slidesToScroll: 1
+//                        });
+//                    });
+//                }
 
         // menu //
         $(document).ready(function() {
