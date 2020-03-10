@@ -380,6 +380,14 @@ hr.sns_box_under {
     font-size: 12px;
 }
 
+.pc {
+    display: none;
+}
+
+.sp {
+    display: block;
+}
+
 .section {
     background-size: cover;
     height: 100vh;
@@ -863,22 +871,34 @@ ul.sub-menu li {
         height: 4px;
     }
 
-    /* 8 photos & contact #photos */
+    /* 8 photos #photos */
 
+    /*
     #photos {
         background-image: url(/images/bg7.jpg);
-        color: #BC005A;
-        position: relative;
     }
-
+*/
     .photos-title {
-        margin-top: 100px;
-        position: relative;
+        margin-top: 80px;
     }
 
     .photos-title .title {
-        padding-left: 50px;
-        font-size: 30px;
+        padding-left: 320px;
+        font-size: 80px;
+    }
+
+    /* slick */
+    .slider {
+        width: 700px;
+    }
+
+    /* 9 contact #contact */
+    .sp {
+        display: none;
+    }
+
+    .pc {
+        display: block;
     }
 
     .sns {

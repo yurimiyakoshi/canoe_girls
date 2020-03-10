@@ -183,7 +183,7 @@
             </div>
             <div class="youtube">
                 <iframe width="300" height="210" src="https://www.youtube.com/embed/VSMl6rTwrSY?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="sp-movie" allowfullscreen></iframe>
-                
+
                 <iframe width="700" height="500" src="https://www.youtube.com/embed/VSMl6rTwrSY?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="pc-movie" allowfullscreen></iframe>
             </div>
 
@@ -213,7 +213,40 @@
                     <!--                    <li><a href="#"><img src="images/slick_sp9.jpg" alt="image09"></a></li>-->
                 </ul>
             </div>
+            
+            <a href="#9thPage" class="pc"><span class="down"></span></a>
 
+            <div class="sns-title sp">
+                <p class="title">Contact</p>
+                <hr class="sns_box_under">
+            </div>
+
+            <div class="sns sp">
+                <ul class="snsbtn">
+
+                    <!--      インスタ フォロー用url https://www.instagram.com/keiocanoeteam?ref=badge"     -->
+                    <li><a href="https://www.instagram.com/keiocanoeteam/" class="flowbtn insta"><i class="fab fa-instagram"></i></a></li>
+
+                    <!--      fb          -->
+                    <li><a href="https://www.facebook.com/keiocanoe/" class="flowbtn facebook"><i class="fab fa-facebook-f"></i></a></li>
+
+                    <!--      ツイッタ     -->
+                    <li><a href="https://twitter.com/keio_canoe/" class="flowbtn twitter"><i class="fab fa-twitter"></i></a></li>
+
+                    <!--      line        -->
+                    <li><a href="https://line.me/ti/p/CSA8-OrghD" class="flowbtn line"><i class="fab fa-line"></i></a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer sp">
+                <p>&copy; 2020 yuri miyakoshi</p>
+            </div>
+        </section>
+
+        <section class="section pc" id="contact">
+           <a href="#8thPage" class="pc"><span class="up"></span></a>
+           
             <div class="sns-title">
                 <p class="title">Contact</p>
                 <hr class="sns_box_under">
@@ -236,9 +269,7 @@
 
                 </ul>
             </div>
-
-
-
+            
             <div class="footer">
                 <p>&copy; 2020 yuri miyakoshi</p>
             </div>
@@ -249,7 +280,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
+                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
             });
         });
 
@@ -276,22 +307,22 @@
         });
 
         // スライダー //
-        if (window.matchMedia('screen and (max-width:1024px)').matches) {
-            // スマホレイアウト
+//        if (window.matchMedia('screen and (max-width:1024px)').matches) {
+//            // スマホレイアウト
             $(document).ready(function() {
                 $('.slider').slick({});
             });
-            console.log('sp');
-        } else {
-            // PCレイアウト
-            console.log('pc');
-            $(document).ready(function() {
-                $('.slider').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1
-                });
-            });
-        }
+//            console.log('sp');
+//        } else {
+//            // PCレイアウト
+//            console.log('pc');
+//            $(document).ready(function() {
+//                $('.slider').slick({
+//                    slidesToShow: 4,
+//                    slidesToScroll: 1
+//                });
+//            });
+//        }
 
         // menu //
         $(document).ready(function() {
@@ -311,6 +342,9 @@
             });
 
         });
+
     </script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-</body></html>
+</body>
+
+</html>
