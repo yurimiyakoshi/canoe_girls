@@ -380,7 +380,8 @@ hr.sns_box_under {
     font-size: 12px;
 }
 
-.pc {
+.pc,
+#contact {
     display: none;
 }
 
@@ -577,10 +578,6 @@ a span.up {
 .slider {
     margin: 20px auto;
     width: 300px;
-}
-
-.slider {
-    /*        margin-top: 40px;*/
 }
 
 .slider img {
