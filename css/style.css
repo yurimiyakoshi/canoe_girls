@@ -159,7 +159,6 @@ hr.about_box_under {
     width: 320px;
     margin-top: 280px;
     float: right;
-    height: 170px;
 }
 
 #results .title {
@@ -656,9 +655,11 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
+    /*
     #about {
         background-image: url(/images/bg2.jpg);
     }
+*/
 
     #about .text-img {
         top: 120px;
@@ -693,6 +694,46 @@ ul.sub-menu li {
         letter-spacing: 1.4px;
         line-height: 35px;
         padding: 10px 30px 50px 50px;
+    }
+
+    /* 4 結果 #results */
+    /*
+    #results {
+        background-image: url(/images/bg3.jpg);
+    }
+*/
+    #results .text-img {
+        left: 380px;
+        width: 400px;
+    }
+
+    #results .front-img {
+        top: 320px;
+        left: 360px;
+        width: 600px;
+    }
+
+    #results .box {
+        width: 540px;
+        margin-right: 300px;
+    }
+
+    #results .title {
+        padding-right: 100px;
+        padding-top: 30px;
+        font-size: 42px;
+    }
+
+    hr.results_box_under {
+        width: 250px;
+        top: 85px;
+    }
+
+    #results p.text {
+        font-size: 22px;
+        letter-spacing: 1.6px;
+        line-height: 40px;
+        padding: 30px 30px 65px 50px;
     }
 
 
