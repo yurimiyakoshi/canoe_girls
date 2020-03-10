@@ -391,7 +391,6 @@ hr.sns_box_under {
 .section {
     background-size: cover;
     height: 100vh;
-    background-position: 0 0;
 }
 
 
@@ -901,50 +900,76 @@ ul.sub-menu li {
         display: block;
     }
 
+
+    #contact {
+        background-image: url(/images/bg7.jpg);
+        color: #BC005A;
+    }
+
+    #contact .text-img {
+        position: absolute;
+        left: 380px;
+        top: 140px;
+    }
+
     .sns {
-        padding-top: 60px;
-        width: 260px;
-        margin: 0 auto;
+        padding-top: 550px;
+        width: 600px;
     }
 
     .sns-title {
-        position: relative;
-        float: right;
-        width: 180px;
+        margin-top: 380px;
+        width: 400px;
+        margin-right: 340px;
     }
 
     .sns-title .title {
-        padding-left: 30px;
-        font-size: 30px;
+        padding-left: 80px;
+        font-size: 70px;
     }
 
     hr.sns_box_under {
-        background-color: #BC005A;
-        width: 200px;
-        height: 1px;
-        position: absolute;
-        top: 40px;
+        width: 380px;
+        height: 4px;
+        top: 85px;
     }
 
+/*   snsボタンたち */
+
+    /* ボタン全体 */
+    .flowbtn {
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+    }
+    
+    /* Instagramアイコン位置 */
+    .insta .fa-instagram {
+        font-size: 80px;
+    }
+
+    /* Instagramオレンジグラデ背景 */
+    .insta:before {
+        top: 54px;
+        left: -24px;
+        width: 120px;
+        height: 80px;
+    }
+
+    /* LINE */
+    .line {
+        font-size: 115px;
+    }
+    /* snsボタンたち終わり */
+
     .footer {
-        height: 50px;
-        background-color: #BC005A;
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        color: #fff;
-        text-align: center;
+        height: 100px;
     }
 
     .footer > p {
-        padding: 15px;
-        font-size: 12px;
-    }
-
-    .section {
-        background-size: cover;
-        height: 100vh;
-        background-position: 0 0;
+        padding: 32px;
+        font-size: 20px;
     }
 
 }
