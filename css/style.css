@@ -612,9 +612,9 @@ ul.sub-menu li {
     padding: 5px 10px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
 
-    /* 320pxまでの幅の場合に適応される */
+    /* 380pxまでの幅の場合に適応される */
     .header {
         left: 30px;
         top: 70px;
@@ -801,10 +801,11 @@ ul.sub-menu li {
         font-size: 50px;
     }
 }
+/*
 
 @media screen and (min-width: 321px) and (max-width: 370px) {
 
-    /* 380pxまでの幅の場合に適応される */
+     380pxまでの幅の場合に適応される 
     .header {
         left: 35px;
         top: 75px;
@@ -834,6 +835,7 @@ ul.sub-menu li {
         top: 340px;
     }
 }
+*/
 
 /* タブレット縦・スマートフォン横 */
 
