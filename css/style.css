@@ -855,11 +855,98 @@ ul.sub-menu li {
     }
 
     hr.movie_box_under,
-    hr.photos_box_under {
+    hr.photos_box_under,
+    hr.sns_box_under {
         width: 320px;
-        top: 85px;
         height: 4px;
     }
+
+    hr.movie_box_under {
+        top: 85px;
+    }
+
+    /* 8 photos #photos */
+    .photos-title {
+        margin-top: 100px;
+    }
+
+    #photos .title {
+        font-size: 60px;
+        padding-left: 70px;
+    }
+
+    .photos-title .title {
+        padding-left: 90px;
+    }
+
+    hr.photos_box_under,
+    hr.sns_box_under {
+        top: 70px;
+    }
+
+    .sns-title {
+        width: 320px;
+    }
+
+    /* slick */
+    .slider {
+        width: 500px;
+        margin: 40px auto;
+    }
+
+    /* 9 contact #contact */
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .sns {
+        padding-top: 120px;
+        width: 500px;
+    }
+
+    /*   snsボタンたち */
+
+    /* ボタン全体 */
+    .flowbtn {
+        border-radius: 18px;
+        width: 85px;
+        height: 85px;
+        font-size: 54px;
+    }
+
+    /* Instagramアイコン位置 */
+    .insta .fa-instagram {
+        font-size: 70px;
+    }
+
+    /* Instagramオレンジグラデ背景 */
+    .insta:before {
+        top: 54px;
+        left: -24px;
+        width: 120px;
+        height: 80px;
+    }
+
+    /* LINE */
+    .line {
+        font-size: 100px;
+    }
+
+    /* snsボタンたち終わり */
+
+    .footer {
+        height: 75px;
+    }
+
+    .footer > p {
+        padding: 24px;
+        font-size: 18px;
+    }
+
 }
 
 /* タブレット縦終わり */
@@ -1125,7 +1212,6 @@ ul.sub-menu li {
     }
 
     /* 8 photos #photos */
-
     #photos {
         background-image: url(/images/bg_pc7.jpg);
     }
