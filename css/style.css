@@ -310,7 +310,8 @@ hr.recruit_box_under {
     margin: 20px auto;
 }
 
-.pc-movie {
+.pc-movie,
+.ip-movie {
     display: none;
 }
 
@@ -818,6 +819,47 @@ ul.sub-menu li {
         top: 540px;
         width: 500px;
     }
+
+    /* 7 PV #movie */
+    #movie {
+        background-position: 5% 10%;
+    }
+
+    #movie .text-img {
+        top: 170px;
+        right: 80px;
+        width: 300px;
+    }
+
+    .movie-title {
+        margin-top: 300px;
+    }
+
+    #movie .title {
+        font-size: 70px;
+        padding-left: 90px;
+    }
+
+    .youtube {
+        width: 560px;
+        height: 400px;
+    }
+
+    .sp-movie,
+    .pc-movie {
+        display: none;
+    }
+
+    .ip-movie {
+        display: block;
+    }
+
+    hr.movie_box_under,
+    hr.photos_box_under {
+        width: 320px;
+        top: 85px;
+        height: 4px;
+    }
 }
 
 /* タブレット縦終わり */
@@ -1065,7 +1107,8 @@ ul.sub-menu li {
         height: 500px;
     }
 
-    .sp-movie {
+    .sp-movie,
+    .ip-movie {
         display: none;
     }
 
