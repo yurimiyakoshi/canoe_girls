@@ -664,11 +664,11 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
-    /*
+
     #about {
-        background-image: url(/images/bg2.jpg);
+        background-image: url(/images/bg_pc2.jpg);
     }
-*/
+
 
     #about .text-img {
         top: 120px;
@@ -706,25 +706,28 @@ ul.sub-menu li {
     }
 
     /* 4 結果 #results */
-    /*
+
     #results {
-        background-image: url(/images/bg3.jpg);
+        background-image: url(/images/bg_pc3.jpg);
+        background-position: 0 55%;
     }
-*/
+
     #results .text-img {
-        left: 380px;
+        left: 390px;
         width: 400px;
+        top: 100px;
     }
 
     #results .front-img {
         top: 320px;
-        left: 360px;
-        width: 600px;
+        left: 320px;
+        width: 570px;
     }
 
     #results .box {
         width: 540px;
         margin-right: 300px;
+        margin-top: 300px;
     }
 
     #results .title {
@@ -746,20 +749,21 @@ ul.sub-menu li {
     }
 
     /* 5 ブログ #blog */
-    /*
+
     #blog {
-        background-image: url(/images/bg4.jpg);
+        background-image: url(/images/bg_pc4.jpg);
+        background-position: 0 55%;
     }
-*/
+
     #blog .text-img {
         left: 880px;
         width: 500px;
     }
 
     #blog .front-img {
-        top: 320px;
+        top: 350px;
         right: 320px;
-        width: 600px;
+        width: 620px;
     }
 
     #blog .box {
@@ -792,11 +796,10 @@ ul.sub-menu li {
 
     /* 6 新歓情報 #recruit */
 
-    /*
     #recruit {
-        background-image: url(/images/bg5.jpg);
+        background-image: url(/images/bg_pc5.jpg);
+        background-position: 0 40%;
     }
-*/
 
     #recruit .box {
         width: 600px;
@@ -819,21 +822,21 @@ ul.sub-menu li {
         font-size: 22px;
         letter-spacing: 1.6px;
         line-height: 45px;
-        padding: 20px 30px 65px 90px;
+        padding: 20px 30px 65px 100px;
     }
 
     #recruit .front-img {
         top: 200px;
-        left: 320px;
-        width: 550px;
+        left: 310px;
+        width: 600px;
     }
 
     /* 7 PV #movie */
-    /*
     #movie {
-        background-image: url(/images/bg6.jpg);
+        background-image: url(/images/bg_pc6.jpg);
+        background-position: 5% 10%;
     }
-*/
+
     #movie .text-img {
         display: none;
     }
@@ -870,11 +873,10 @@ ul.sub-menu li {
 
     /* 8 photos #photos */
 
-    /*
     #photos {
-        background-image: url(/images/bg7.jpg);
+        background-image: url(/images/bg_pc7.jpg);
     }
-*/
+
     .photos-title {
         margin-top: 80px;
     }
@@ -887,6 +889,7 @@ ul.sub-menu li {
     /* slick */
     .slider {
         width: 700px;
+        margin: 40px auto;
     }
 
     /* 9 contact #contact */
@@ -899,7 +902,7 @@ ul.sub-menu li {
     }
 
     #contact {
-        background-image: url(/images/bg7.jpg);
+        background-image: url(/images/bg_pc8.jpg);
         color: #BC005A;
     }
 
@@ -931,7 +934,7 @@ ul.sub-menu li {
         top: 85px;
     }
 
-/*   snsボタンたち */
+    /*   snsボタンたち */
 
     /* ボタン全体 */
     .flowbtn {
@@ -940,7 +943,7 @@ ul.sub-menu li {
         height: 100px;
         font-size: 60px;
     }
-    
+
     /* Instagramアイコン位置 */
     .insta .fa-instagram {
         font-size: 80px;
@@ -958,6 +961,7 @@ ul.sub-menu li {
     .line {
         font-size: 115px;
     }
+
     /* snsボタンたち終わり */
 
     .footer {
