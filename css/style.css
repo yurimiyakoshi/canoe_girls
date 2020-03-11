@@ -615,7 +615,15 @@ ul.sub-menu li {
 
 /* タブレット縦・スマートフォン横 */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* メインビジュアル #top */
+    .header {
+        font-size: 90px;
+        left: 80px;
+    }
+
+}
 
 /* タブレット横・デスクトップ */
 
