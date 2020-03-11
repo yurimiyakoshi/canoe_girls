@@ -598,9 +598,9 @@ a span.up {
     opacity: 1;
     height: 140vh;
     width: 140vh;
-    top: -190px;
-    right: -500px;
-    border-radius: 500px;
+    top: -36vh;
+    right: -60vh;
+    border-radius: 70vh;
     z-index: 1;
 }
 
@@ -623,7 +623,204 @@ ul.sub-menu li {
         left: 80px;
     }
 
+    /* menu調整 */
+    .open {
+        top: 60px;
+        right: 60px;
+    }
+
+    .oppenned .sub-menu {
+        width: 600px;
+        height: 600px;
+    }
+
+    .sub-menu li:first-child {
+        margin-top: 200px;
+    }
+
+    .oppenned .screen {
+        height: 140vh;
+        width: 140vh;
+        top: -35vh;
+        right: -55vh;
+        border-radius: 70vh;
+    }
+
+    .sub-menu li a {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .oppenned li {
+        margin-right: 170px;
+    }
+
+    ul.sub-menu li {
+        width: 45%;
+        padding: 8px 0px;
+    }
+
+    /* 2 メッセージ #message */
+    #messege .text-img {
+        width: 500px;
+    }
+
+    /* 3 About us #about */
+    #about {
+        background-image: url(/images/bg_pc2.jpg);
+        background-position: bottom;
+    }
+
+    #about .text-img {
+        top: 180px;
+        width: 400px;
+    }
+
+    #about .box {
+        width: 480px;
+        margin-top: 370px;
+    }
+
+    #about .front-img {
+        top: 460px;
+        width: 500px;
+    }
+
+    #about .title {
+        padding-top: 40px;
+        font-size: 50px;
+        padding-left: 50px;
+    }
+
+    hr.about_box_under {
+        width: 280px;
+        top: 100px;
+    }
+
+    #about p.text {
+        font-size: 18px;
+        letter-spacing: 1.4px;
+        line-height: 35px;
+        padding: 10px 30px 50px 50px;
+    }
+
+    /* 4 結果 #results */
+    #results {
+        background-position: 0 40%;
+    }
+
+    #results .text-img {
+        left: 80px;
+        width: 400px;
+    }
+
+    #results .front-img {
+        top: 560px;
+        width: 580px;
+    }
+
+    #results .box {
+        width: 540px;
+        margin-top: 360px;
+    }
+
+    #results .title {
+        padding-right: 100px;
+        padding-top: 30px;
+        font-size: 46px;
+    }
+
+    hr.results_box_under {
+        width: 280px;
+        top: 85px;
+    }
+
+    #results p.text {
+        font-size: 22px;
+        letter-spacing: 1.6px;
+        line-height: 40px;
+        padding: 20px 30px 65px 50px;
+    }
+
+    /* 5 ブログ #blog */
+    #blog {
+        background-position: bottom;
+    }
+
+    #blog .text-img {
+        left: 60px;
+        top: 200px;
+        width: 500px;
+    }
+
+    #blog .front-img {
+        top: 320px;
+        width: 540px;
+        right: -100px;
+    }
+
+    #blog .box {
+        width: 520px;
+        margin-top: 540px;
+    }
+
+    #blog .title {
+        padding-top: 40px;
+        font-size: 50px;
+        padding-left: 50px;
+    }
+
+    span.triangle {
+        font-size: 24px;
+    }
+
+    hr.blog_box_under {
+        width: 360px;
+        top: 100px;
+    }
+
+    #blog p.text {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 40px;
+        padding: 20px 30px 65px 65px;
+    }
+
+    /* 6 新歓情報 #recruit */
+    #recruit {
+        background-image: url(/images/bg_pc5.jpg);
+        background-position: center;
+    }
+
+    #recruit .box {
+        width: 600px;
+    }
+
+    #recruit .title {
+        padding-right: 120px;
+        padding-top: 30px;
+        font-size: 56px;
+    }
+
+    hr.recruit_box_under {
+        width: 340px;
+        top: 92px;
+    }
+
+    #recruit p.text {
+        font-size: 22px;
+        letter-spacing: 1.6px;
+        line-height: 45px;
+        padding: 20px 30px 65px 80px;
+    }
+
+    #recruit .front-img {
+        top: 540px;
+        width: 500px;
+    }
 }
+
+/* タブレット縦終わり */
 
 /* タブレット横・デスクトップ */
 
@@ -636,13 +833,10 @@ ul.sub-menu li {
         left: 150px;
     }
 
+    /* menu調整 */
     .open {
-        top: 30px;
-    }
-
-    .oppenned .sub-menu {
-        width: 600px;
-        height: 600px;
+        top: 50px;
+        right: 50px;
     }
 
     .sub-menu {
@@ -652,7 +846,20 @@ ul.sub-menu li {
         top: -100px;
     }
 
-    /* menu調整 */
+    .sub-menu li a {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .sub-menu li:first-child {
+        margin-top: 210px;
+    }
+
+    .oppenned .sub-menu {
+        width: 600px;
+        height: 600px;
+    }
+
     .oppenned .screen {
         height: 140vw;
         width: 140vw;
@@ -661,9 +868,8 @@ ul.sub-menu li {
         border-radius: 70vw;
     }
 
-    .sub-menu li a {
-        font-size: 30px;
-        line-height: 60px;
+    .oppenned li {
+        margin-right: 170px;
     }
 
     /* 2 メッセージ #message */
@@ -672,11 +878,9 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
-
     #about {
         background-image: url(/images/bg_pc2.jpg);
     }
-
 
     #about .text-img {
         top: 120px;
@@ -714,7 +918,6 @@ ul.sub-menu li {
     }
 
     /* 4 結果 #results */
-
     #results {
         background-image: url(/images/bg_pc3.jpg);
         background-position: 0 55%;
@@ -803,7 +1006,6 @@ ul.sub-menu li {
     }
 
     /* 6 新歓情報 #recruit */
-
     #recruit {
         background-image: url(/images/bg_pc5.jpg);
         background-position: 0 40%;
