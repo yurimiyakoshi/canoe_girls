@@ -107,13 +107,13 @@ a {
 
 #about .front-img {
     position: absolute;
-    top: 420px;
+    top: 380px;
     right: -40px;
 }
 
 #about .box {
     width: 290px;
-    margin-top: 250px;
+    margin-top: 210px;
 }
 
 #about .title {
@@ -146,19 +146,19 @@ hr.about_box_under {
 
 #results .text-img {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 30px;
 }
 
 #results .front-img {
     position: absolute;
-    top: 420px;
-    left: -90px;
+    top: 360px;
+    left: -80px;
 }
 
 #results .box {
-    width: 320px;
-    margin-top: 280px;
+    width: 300px;
+    margin-top: 230px;
     float: right;
 }
 
@@ -181,7 +181,7 @@ hr.results_box_under {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 60px;
-    font-size: 16px;
+    font-size: 14px;
     float: left;
     letter-spacing: 1px;
     line-height: 28px;
@@ -230,9 +230,7 @@ hr.blog_box_under {
 }
 
 #blog p.text {
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 10px 35px 40px;
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -246,7 +244,7 @@ hr.blog_box_under {
 
 #recruit .box {
     width: 300px;
-    margin-top: 200px;
+    margin-top: 180px;
     float: right;
 }
 
@@ -277,7 +275,7 @@ hr.recruit_box_under {
 
 #recruit .front-img {
     position: absolute;
-    top: 380px;
+    top: 370px;
     left: -20px;
 }
 
@@ -612,6 +610,93 @@ a span.up {
 ul.sub-menu li {
     width: 45%;
     padding: 5px 10px;
+}
+
+@media screen and (max-width: 320px) {
+
+    /* 320pxまでの幅の場合に適応される */
+    .header {
+        left: 30px;
+        top: 70px;
+        font-size: 45px;
+    }
+
+    #messege .text-img {
+        width: 260px;
+    }
+
+    #about .text-img {
+        top: 80px;
+        width: 220px;
+    }
+
+    #about .box {
+        width: 240px;
+        margin-top: 180px;
+    }
+
+    #about .title {
+        padding-left: 25px;
+        padding-top: 18px;
+        font-size: 28px;
+    }
+
+    #blog .text-img {
+        top: 120px;
+        width: 270px;
+    }
+
+    #blog .front-img {
+        top: 180px;
+        right: -70px;
+    }
+
+    #blog .box {
+        width: 320px;
+        margin-top: 370px;
+        height: 180px;
+    }
+
+    #recruit .box {
+        margin-top: 150px;
+    }
+
+    #recruit .front-img {
+        top: 340px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 370px) {
+
+    /* 380pxまでの幅の場合に適応される */
+    .header {
+        left: 35px;
+        top: 75px;
+    }
+
+    #blog .text-img {
+        top: 120px;
+        width: 270px;
+    }
+
+    #blog .front-img {
+        top: 180px;
+        right: -70px;
+    }
+
+    #blog .box {
+        width: 320px;
+        margin-top: 370px;
+        height: 180px;
+    }
+
+    #recruit .box {
+        margin-top: 150px;
+    }
+
+    #recruit .front-img {
+        top: 340px;
+    }
 }
 
 /* タブレット縦・スマートフォン横 */
