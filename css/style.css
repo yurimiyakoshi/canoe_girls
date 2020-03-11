@@ -27,7 +27,8 @@ a {
 /* 共通 */
 
 .title,
-.header {
+.header,
+.sub-menu {
     font-family: Playlist, Shelby, 'Yellowtail', cursive;
 }
 
@@ -654,6 +655,7 @@ ul.sub-menu li {
 
     .sub-menu li a {
         font-size: 30px;
+        line-height: 60px;
     }
 
     /* 2 メッセージ #message */
