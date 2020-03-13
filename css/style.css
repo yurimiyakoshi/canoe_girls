@@ -1564,6 +1564,7 @@ ul.sub-menu li {
     z-index: 2;
 }
 
+/*
 .cls-1 {
     fill: #BC005A;
     stroke: #BC005A;
@@ -1587,6 +1588,76 @@ ul.sub-menu li {
 
     50% {
         fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #BC005A;
+    }
+}
+*/
+
+
+.cls-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -238px;
+    width: 400px;
+}
+
+path {
+    fill: none;
+    stroke: #BC005A;
+    /*線の色を指定する*/
+    stroke-dasharray: 2000;
+    /*線の間隔を指定する*/
+    stroke-dashoffset: 0;
+    /*線の位置を指定する(IEは効かない属性)*/
+    stroke-width: 1.4;
+    /*線の太さを指定する*/
+    -webkit-animation: hello 3s ease-in forwards;
+    animation: hello 3s ease-in forwards;
+}
+
+@-webkit-keyframes hello {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+        /*透過*/
+    }
+
+    50% {
+        fill: transparent;
+        /*透過*/
+    }
+    
+    90% {
+        stroke-dashoffset: 0;
+        fill: #BC005A;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #BC005A;
+    }
+}
+
+@keyframes hello {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+        /*透過*/
+    }
+
+    50% {
+        fill: transparent;
+        /*透過*/
+    }
+    
+    90% {
+        stroke-dashoffset: 0;
+        fill: #BC005A;
     }
 
     100% {
