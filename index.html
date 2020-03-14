@@ -162,7 +162,7 @@
                 <path class="cls-1" d="M674.8,225.2c9-2.3,17.9-4.6,27.2-4.8,2.8,0,.4-2.9-.4-3.7s-5-3.2-7.6-3.1c-9.9.1-19.3,2.7-28.8,5.2-2.3.6,1.9,4,2.4,4.3,2,1.4,4.8,2.8,7.2,2.1Z" transform="translate(-4.6 -5.7)" />
                 <path class="cls-1" d="M670.4,239.6c10.3,3.8,19.5-.2,29.6-2.2,4.2-.8-5-7.4-8-6.8s-6.8,1.6-10.2,2.5-8.7,2.5-12.2,1.3c-1.4-.6-4.5-1.8-5,.4s4.6,4.4,5.8,4.8Z" transform="translate(-4.6 -5.7)" />
             </svg>
-            
+
             　<svg id="my_svg_element" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 151">
                 <defs>
                     <style type="text/css">
@@ -281,6 +281,8 @@
                 <path class="cls-1" d="M270.29,108.48c3.82-.3,7.46-2.35,11.26-2.85,1.09-.15.24-1.15-.19-1.54a4.82,4.82,0,0,0-3.18-1.32c-3.79.51-7.45,2.56-11.26,2.86-1.11.09-.2,1.18.2,1.54a4.81,4.81,0,0,0,3.17,1.31Z" />
             </svg>
 
+
+            
 
             　<p>Loading...</p>
         </div>
@@ -546,19 +548,19 @@
             $('#contens').css('display', 'block'); // コンテンツを表示する
         });
 
-                var mySVG = $('#my_svg_element').drawsvg({
-                    duration: 50, //ひとつのpathが描き終わる速度
-                    stagger: 500, //次のpathを書き始めるまでの遅延時間。
-                    easing: 'swing', //jqueryで使用できるイージングを実装。
-                    reverse: false, //描く方向の指定。
-                    callback: function() {
-                        //処理を記述
-                    }
-                });
-                mySVG.drawsvg('animate');
+        var mySVG = $('#my_svg_element').drawsvg({
+            duration: 40, //ひとつのpathが描き終わる速度
+            stagger: 40, //次のpathを書き始めるまでの遅延時間。
+            easing: 'swing', //jqueryで使用できるイージングを実装。
+            reverse: false, //描く方向の指定。
+            callback: function() {
+                //処理を記述
+            }
+        });
+        mySVG.drawsvg('animate');
 
-//        var mySVG = $('#my_svg_element').drawsvg();
-//        mySVG.drawsvg('animate');
+        //        var mySVG = $('#my_svg_element').drawsvg();
+        //        mySVG.drawsvg('animate');
 
         $(document).ready(function($) {
             //769px以上の場合
