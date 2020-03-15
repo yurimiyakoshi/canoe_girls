@@ -612,6 +612,37 @@ ul.sub-menu li {
     padding: 5px 10px;
 }
 
+/* loader */
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+}
+
+/* lazy */
+#art7 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+
 @media screen and (max-width: 380px) {
 
     /* 380pxまでの幅の場合に適応される */
@@ -1170,6 +1201,10 @@ ul.sub-menu li {
         padding: 24px;
         font-size: 18px;
     }
+    
+    #loader {
+        width: 500px;
+    }
 
 }
 
@@ -1535,159 +1570,9 @@ ul.sub-menu li {
         padding: 32px;
         font-size: 20px;
     }
-
-}
-
-
-#loader-bg {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: #fff;
-    z-index: 1;
-}
-
-#loader {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 800px;
-    margin-top: -200px;
-    margin-left: -400px;
-    text-align: center;
-    z-index: 2;
-}
-
-#svg-animation .cls-1 {
-    fill: none;
-/*    stroke: #FFFFFF;*/
-    stroke-width: 30;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-    stroke-dasharray: 1500;
-    /* この行を追加 */
-    stroke-dashoffset: 1500;
-    /* この行を追加 */
-}
-
-/*
-.cls-1 {
-    fill: #BC005A;
-    stroke: #BC005A;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 0;
-    stroke-width: 1;
-    -webkit-animation: hello 4s ease-in 0s;
-    animation: hello 4s ease-in 0s;
-}
-
-@-webkit-keyframes hello {
-    0% {
-        stroke-dashoffset: 2000;
-        fill: transparent;
+    
+    #loader {
+        width: 700px;
     }
 
-    40% {
-        stroke-dashoffset: 2000;
-        fill: transparent;
-    }
-
-    50% {
-        fill: transparent;
-    }
-
-    100% {
-        stroke-dashoffset: 0;
-        fill: #BC005A;
-    }
-}
-*/
-
-/*
-.cls-1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 0 0 -238px;
-    width: 400px;
-}
-
-path {
-    fill: none;
-    stroke: #BC005A;
-    /*線の色を指定する*/
-/*    stroke-dasharray: 2000;*/
-/*線の間隔を指定する*/
-/*    stroke-dashoffset: 0;*/
-/*線の位置を指定する(IEは効かない属性)*/
-/*    stroke-width: 1.2;*/
-/*線の太さを指定する*/
-/*  -webkit-animation: hello 3s ease-in forwards;
-    animation: hello 3s ease-in forwards;
-}
-
-@-webkit-keyframes hello {
-    0% {
-        stroke-dashoffset: 2000;
-        fill: transparent;
-        /*透過*/
-}
-
-/*  50% {
-        fill: transparent;
-        /*透過*/
-}
-
-/*  100% {
-        stroke-dashoffset: 0;
-        fill: #BC005A;
-    }
-}
-
-@keyframes hello {
-    0% {
-        stroke-dashoffset: 2000;
-        fill: transparent;
-        /*透過*/
-}
-
-/*
-    50% {
-        fill: transparent;
-        /*透過*/
-}
-
-/*  100% {
-        stroke-dashoffset: 0;
-        fill: #BC005A;
-    }
-}
-*/
-
-/* lazy */
-/*
-body,
-         html {
-             position: absolute;
-             width: 100%;
-             height: 100%;
-             top: 0;
-             left: 0;
-             margin: 0;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-         }
-*/
-
-#art7 {
-    width: 70vw;
-    height: 70vh;
-    /*             position: relative;*/
-    overflow: visible;
 }
