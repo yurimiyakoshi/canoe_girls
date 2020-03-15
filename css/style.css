@@ -1551,28 +1551,21 @@ ul.sub-menu li {
 }
 
 #loader {
-    transform: translateY(-50%) translateX(-50%);
-    -webkit- transform: translateY(-50%) translateX(-50%);
-    
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-/*
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
-*/
+    width: 800px;
+    margin-top: -200px;
+    margin-left: -400px;
     text-align: center;
-    color: #fff;
     z-index: 2;
 }
 
 #svg-animation .cls-1 {
     fill: none;
-    stroke: #FFFFFF;
-    stroke-width: 20;
+/*    stroke: #FFFFFF;*/
+    stroke-width: 30;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
