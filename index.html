@@ -18,7 +18,7 @@
     <!--   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/fullpage.min.js"></script>
-    
+
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -29,9 +29,6 @@
     <script src="/js/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="/css/jquery.bxslider.css">
 
-    <!--  svg  -->
-    <script src="/js/jquery.drawsvg.js"></script>
-
     <!--  lazy line patinter  -->
     <script src="/js/lazy-line-painter-1.9.6.min.js"></script>
 
@@ -41,9 +38,7 @@
 
     <div id="loader-bg">
         <div id="loader">
-           
-           <img src="/images/logo124_animated.svg">
-           
+            <img src="/images/logo124_animated.svg">
         </div>
     </div>
     <div id="contens">
@@ -290,9 +285,7 @@
                     <p>&copy; 2020 yuri miyakoshi</p>
                 </div>
             </section>
-
         </div>
-
     </div>
 
     <script type="text/javascript">
@@ -305,36 +298,6 @@
             $('#loader').delay(600).fadeOut(300);
             $('#contens').css('display', 'block'); // コンテンツを表示する
         });
-
-        (function() {
-
-            document.onreadystatechange = () => {
-
-                if (document.readyState === 'complete') {
-                    let el = document.querySelector('#art7');
-                    let myAnimation = new LazyLinePainter(el, {
-                        "ease": "easeLinear",
-                        "strokeWidth": 3,
-                        "strokeOpacity": 1,
-                        "strokeColor": "#CB005A",
-                        "strokeCap": "round"
-                    });
-                    myAnimation.paint();
-                }
-            }
-
-        })();
-
-        var mySVG = $('#my_svg_element').drawsvg({
-            duration: 40, //ひとつのpathが描き終わる速度
-            stagger: 40, //次のpathを書き始めるまでの遅延時間。
-            easing: 'swing', //jqueryで使用できるイージングを実装。
-            reverse: false, //描く方向の指定。
-            callback: function() {
-                //処理を記述
-            }
-        });
-        mySVG.drawsvg('animate');
 
         $(document).ready(function($) {
             //769px以上の場合
