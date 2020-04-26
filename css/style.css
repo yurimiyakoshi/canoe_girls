@@ -96,7 +96,8 @@ a {
 
 /* 3 About us #about */
 #about {
-    background-image: url(/images/bg2.jpg);
+    background-image: url(/images/bg_pc2.jpg);
+    background-position: center;
 }
 
 #about .text-img {
@@ -239,7 +240,8 @@ hr.blog_box_under {
 /* 6 新歓情報 #recruit */
 
 #recruit {
-    background-image: url(/images/bg5.jpg);
+    background-image: url(/images/bg_pc5.jpg);
+    background-position: center;
 }
 
 #recruit .box {
@@ -282,7 +284,8 @@ hr.recruit_box_under {
 /* 7 PV #movie */
 
 #movie {
-    background-image: url(/images/bg6.jpg);
+    background-image: url(/images/bg_pc7.jpg);
+    background-position: right;
     color: #BC005A;
 }
 
@@ -325,7 +328,8 @@ hr.photos_box_under {
 /* 8 photos & contact #photos */
 
 #photos {
-    background-image: url(/images/bg7.jpg);
+    background-image: url(/images/bg_pc6.jpg);
+    background-position: 75% 25%;
     color: #BC005A;
     position: relative;
 }
