@@ -95,10 +95,12 @@ a {
 }
 
 /* 3 About us #about */
+/*
 #about {
     background-image: url(/images/bg_pc2.jpg);
     background-position: center;
 }
+*/
 
 #about .text-img {
     position: absolute;
@@ -141,9 +143,11 @@ hr.about_box_under {
 
 /* 4 結果 #results */
 
+/*
 #results {
     background-image: url(/images/bg3.jpg);
 }
+*/
 
 #results .text-img {
     position: absolute;
@@ -190,9 +194,11 @@ hr.results_box_under {
 
 /* 5 ブログ #blog */
 
+/*
 #blog {
     background-image: url(/images/bg4.jpg);
 }
+*/
 
 #blog .text-img {
     position: absolute;
@@ -239,10 +245,12 @@ hr.blog_box_under {
 
 /* 6 新歓情報 #recruit */
 
+/*
 #recruit {
     background-image: url(/images/bg_pc5.jpg);
     background-position: center;
 }
+*/
 
 #recruit .box {
     width: 300px;
@@ -284,8 +292,10 @@ hr.recruit_box_under {
 /* 7 PV #movie */
 
 #movie {
+/*
     background-image: url(/images/bg_pc7.jpg);
     background-position: right;
+*/
     color: #BC005A;
 }
 
@@ -328,8 +338,10 @@ hr.photos_box_under {
 /* 8 photos & contact #photos */
 
 #photos {
+/*
     background-image: url(/images/bg_pc6.jpg);
     background-position: 75% 25%;
+*/
     color: #BC005A;
     position: relative;
 }
@@ -530,21 +542,6 @@ a span.up {
     transform: rotate(135deg);
     box-sizing: border-box;
 }
-
-/* bgswitcher */
-/*
-
-.bg-slider {
-	width: 100vw;
-	height: 100vh;
-	background-position:center center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-*/
-
 
 /* bx-slider */
 /*
@@ -918,10 +915,12 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
+/*
     #about {
         background-image: url(/images/bg_pc2.jpg);
         background-position: bottom;
     }
+*/
 
     #about .text-img {
         top: 180px;
@@ -1039,10 +1038,12 @@ ul.sub-menu li {
     }
 
     /* 6 新歓情報 #recruit */
+/*
     #recruit {
         background-image: url(/images/bg_pc5.jpg);
         background-position: center;
     }
+*/
 
     #recruit .box {
         width: 600px;
@@ -1262,9 +1263,11 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
+/*
     #about {
         background-image: url(/images/bg_pc2.jpg);
     }
+*/
 
     #about .text-img {
         top: 120px;
@@ -1302,10 +1305,12 @@ ul.sub-menu li {
     }
 
     /* 4 結果 #results */
+/*
     #results {
         background-image: url(/images/bg_pc3.jpg);
         background-position: 0 55%;
     }
+*/
 
     #results .text-img {
         left: 390px;
@@ -1345,10 +1350,12 @@ ul.sub-menu li {
 
     /* 5 ブログ #blog */
 
+/*
     #blog {
         background-image: url(/images/bg_pc4.jpg);
         background-position: 0 55%;
     }
+*/
 
     #blog .text-img {
         left: 880px;
@@ -1426,10 +1433,12 @@ ul.sub-menu li {
     }
 
     /* 7 PV #movie */
+/*
     #movie {
         background-image: url(/images/bg_pc6.jpg);
         background-position: 5% 10%;
     }
+*/
 
     #movie .text-img {
         display: none;
@@ -1467,9 +1476,11 @@ ul.sub-menu li {
     }
 
     /* 8 photos #photos */
+/*
     #photos {
         background-image: url(/images/bg_pc7.jpg);
     }
+*/
 
     .photos-title {
         margin-top: 80px;
@@ -1495,10 +1506,12 @@ ul.sub-menu li {
         display: block;
     }
 
+/*
     #contact {
         background-image: url(/images/bg_pc8.jpg);
         color: #BC005A;
     }
+*/
 
     #contact .text-img {
         position: absolute;
