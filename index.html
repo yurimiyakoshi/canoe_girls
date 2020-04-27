@@ -12,6 +12,18 @@
             $('#loader').delay(600).fadeOut(300);
             $('#contens').css('display', 'block'); // コンテンツを表示する
         });
+       
+        $(document).ready(function() {
+            $('.bx-slider').bxSlider({
+                mode: 'fade',
+                speed: 1200,
+                pause: 2400,
+                auto: true,
+                pager: false,
+                controls: false,
+                touchEnabled: false
+            });
+        });
     </script>
    
     <meta charset="UTF-8">
@@ -25,13 +37,12 @@
     
     <!--  fullpage.js  -->
     <link rel="stylesheet" href="css/fullpage.min.css">
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <script src="js/fullpage.min.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" as="style" href="css/menu.css" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="css/style.css" onload="this.rel='stylesheet'">
     
     <!--  bx-slider  -->
     <script src="/js/jquery.bxslider.min.js"></script>
@@ -46,14 +57,12 @@
 </head>
 
 <body>
-
     <div id="loader-bg">
         <div id="loader">
             <img src="/images/logo124_animated.svg">
         </div>
     </div>
     <div id="contens">
-
         <div class="open">
             <span class="cls"></span>
             <span>
@@ -301,20 +310,11 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     
     <!--  slick.js  -->
+    
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript">
-//        $(function() {
-//            $('#contents').css('display', 'none'); // コンテンツを非表示にする
-//            $('#loader-bg ,#loader').css('display', 'block'); //ローディング画像を表示
-//        });
-//        $(window).on('load', function() { // 読み込み完了したら実行する
-//            $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
-//            $('#loader').delay(600).fadeOut(300);
-//            $('#contens').css('display', 'block'); // コンテンツを表示する
-//        });
-
         $(document).ready(function($) {
             //769px以上の場合
             if (window.matchMedia('(min-width: 769px)').matches) {
@@ -334,19 +334,6 @@
             };
         });
 
-        // bx-slider //
-        $(document).ready(function() {
-            $('.bx-slider').bxSlider({
-                mode: 'fade',
-                speed: 1200,
-                pause: 2400,
-                auto: true,
-                pager: false,
-                controls: false,
-                touchEnabled: false
-            });
-        });
-
         // スライダー//
         $(document).ready(function() {
             $('.slider').slick({});
@@ -364,8 +351,10 @@
                 $('.screen').removeClass('oppenned');
                 event.stopPropagation();
             });
-
         });
+        
+        $('link[as = "style"]').attr('rel','stylesheet');
+        
     </script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
