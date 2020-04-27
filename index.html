@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script type="text/javascript">
+        $(function() {
+            $('#contents').css('display', 'none'); // コンテンツを非表示にする
+            $('#loader-bg ,#loader').css('display', 'block'); //ローディング画像を表示
+        });
+        $(window).on('load', function() { // 読み込み完了したら実行する
+            $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+            $('#loader').delay(600).fadeOut(300);
+            $('#contens').css('display', 'block'); // コンテンツを表示する
+        });
+    </script>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+          }
+    </style>
+    
+    <!--  fullpage.js  -->
+    <link rel="stylesheet" href="css/fullpage.min.css">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="js/fullpage.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--  bx-slider  -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="/css/jquery.bxslider.css">
+    
     <title>Keio Girl's Canoe Team</title>
     <link rel="shortcut icon" href="/images/favicon.ico">
     <meta name="description" content="慶應義塾體育會端艇部カヌー部門の女子部についてのWebサイトです。" />
     <meta name="keywords" content="体育会,女子,カヌー,慶應,慶応,ラクロス">
     <meta property="og:image" content="/images/logo.jpg" />
-
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
-
-    <!--  fullpage.js  -->
-    <link rel="stylesheet" href="css/fullpage.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/fullpage.min.js"></script>
-
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--  bx-slider  -->
-    <script src="/js/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="/css/jquery.bxslider.css">
     
 </head>
 
@@ -286,15 +305,15 @@
     <link href="css/slick.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript">
-        $(function() {
-            $('#contents').css('display', 'none'); // コンテンツを非表示にする
-            $('#loader-bg ,#loader').css('display', 'block'); //ローディング画像を表示
-        });
-        $(window).on('load', function() { // 読み込み完了したら実行する
-            $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
-            $('#loader').delay(600).fadeOut(300);
-            $('#contens').css('display', 'block'); // コンテンツを表示する
-        });
+//        $(function() {
+//            $('#contents').css('display', 'none'); // コンテンツを非表示にする
+//            $('#loader-bg ,#loader').css('display', 'block'); //ローディング画像を表示
+//        });
+//        $(window).on('load', function() { // 読み込み完了したら実行する
+//            $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+//            $('#loader').delay(600).fadeOut(300);
+//            $('#contens').css('display', 'block'); // コンテンツを表示する
+//        });
 
         $(document).ready(function($) {
             //769px以上の場合
