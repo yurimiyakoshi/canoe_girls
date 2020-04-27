@@ -40,6 +40,7 @@ a {
 
 .section {
     position: relative;
+    background-color: rgba(188, 0, 90, 0.08);
 }
 
 /* fullpage.js上書き */
@@ -1397,10 +1398,12 @@ ul.sub-menu li {
     }
 
     /* 6 新歓情報 #recruit */
+/*
     #recruit {
         background-image: url(/images/bg_pc5.jpg);
         background-position: 0 40%;
     }
+*/
 
     #recruit .box {
         width: 600px;
@@ -1506,12 +1509,10 @@ ul.sub-menu li {
         display: block;
     }
 
-/*
     #contact {
-        background-image: url(/images/bg_pc8.jpg);
+/*        background-image: url(/images/bg_pc8.jpg);*/
         color: #BC005A;
     }
-*/
 
     #contact .text-img {
         position: absolute;
