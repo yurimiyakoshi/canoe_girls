@@ -516,7 +516,7 @@ ul.snsbtn {
 
 a span.down {
     position: absolute;
-    top: 90vh;
+    top: 82vh;
     left: 50%;
     width: 12px;
     height: 12px;
@@ -1191,6 +1191,10 @@ ul.sub-menu li {
 
     /* snsボタンたち終わり */
 
+    a span.down {
+        top: 95vh;
+    }
+
     .footer {
         height: 75px;
     }
@@ -1580,6 +1584,10 @@ ul.sub-menu li {
 
     /* snsボタンたち終わり */
 
+    a span.down {
+        top: 95vh;
+    }
+    
     .footer {
         height: 100px;
     }
