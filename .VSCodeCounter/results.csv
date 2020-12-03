@@ -1,0 +1,17 @@
+"filename", "language", "CSS", "HTML", "SCSS", "JavaScript", "XML", "comment", "blank", "total"
+"/Users/yuri/Desktop/canoe_girls/css/fullpage.min.css", "CSS", 1, 0, 0, 0, 0, 10, 1, 12
+"/Users/yuri/Desktop/canoe_girls/css/jquery.bxslider.css", "CSS", 164, 0, 0, 0, 0, 13, 1, 178
+"/Users/yuri/Desktop/canoe_girls/css/menu.css", "CSS", 199, 0, 0, 0, 0, 1, 10, 210
+"/Users/yuri/Desktop/canoe_girls/css/menu.scss", "SCSS", 0, 0, 203, 0, 0, 0, 8, 211
+"/Users/yuri/Desktop/canoe_girls/css/slick-theme.css", "CSS", 171, 0, 0, 0, 0, 4, 31, 206
+"/Users/yuri/Desktop/canoe_girls/css/slick.css", "CSS", 104, 0, 0, 0, 0, 1, 15, 120
+"/Users/yuri/Desktop/canoe_girls/css/style.css", "CSS", 1113, 0, 0, 0, 0, 205, 279, 1597
+"/Users/yuri/Desktop/canoe_girls/images/logo124_animated.svg", "XML", 0, 0, 0, 0, 255, 0, 58, 313
+"/Users/yuri/Desktop/canoe_girls/index.html", "HTML", 0, 268, 0, 0, 0, 19, 76, 363
+"/Users/yuri/Desktop/canoe_girls/js/fullpage.min.js", "JavaScript", 0, 0, 0, 1, 0, 11, 1, 13
+"/Users/yuri/Desktop/canoe_girls/js/jquery.bxslider.min.js", "JavaScript", 0, 0, 0, 1, 0, 6, 0, 7
+"/Users/yuri/Desktop/canoe_girls/js/jquery.drawsvg.js", "JavaScript", 0, 0, 0, 101, 0, 5, 19, 125
+"/Users/yuri/Desktop/canoe_girls/js/lazysizes.min.js", "JavaScript", 0, 0, 0, 1, 0, 1, 0, 2
+"/Users/yuri/Desktop/canoe_girls/js/particles.min.js", "JavaScript", 0, 0, 0, 1, 0, 8, 0, 9
+"/Users/yuri/Desktop/canoe_girls/js/slick.min.js", "JavaScript", 0, 0, 0, 1, 0, 0, 1, 2
+"Total", "-", 1752, 268, 203, 106, 255, 284, 500, 3368

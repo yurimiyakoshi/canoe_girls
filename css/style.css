@@ -23,9 +23,7 @@ a {
     text-decoration: none;
 }
 
-
 /* 共通 */
-
 .title,
 .header,
 .sub-menu {
@@ -293,7 +291,7 @@ hr.recruit_box_under {
 /* 7 PV #movie */
 
 #movie {
-/*
+    /*
     background-image: url(/images/bg_pc7.jpg);
     background-position: right;
 */
@@ -339,7 +337,7 @@ hr.photos_box_under {
 /* 8 photos & contact #photos */
 
 #photos {
-/*
+    /*
     background-image: url(/images/bg_pc6.jpg);
     background-position: 75% 25%;
 */
@@ -528,6 +526,7 @@ a span.down {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
+    display: none;
 }
 
 a span.up {
@@ -542,6 +541,7 @@ a span.up {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     box-sizing: border-box;
+    display: none;
 }
 
 /* bx-slider */
@@ -916,7 +916,7 @@ ul.sub-menu li {
     }
 
     /* 3 About us #about */
-/*
+    /*
     #about {
         background-image: url(/images/bg_pc2.jpg);
         background-position: bottom;
@@ -1039,7 +1039,7 @@ ul.sub-menu li {
     }
 
     /* 6 新歓情報 #recruit */
-/*
+    /*
     #recruit {
         background-image: url(/images/bg_pc5.jpg);
         background-position: center;
@@ -1199,7 +1199,7 @@ ul.sub-menu li {
         padding: 24px;
         font-size: 18px;
     }
-    
+
     #loader {
         width: 500px;
     }
@@ -1258,13 +1258,21 @@ ul.sub-menu li {
         margin-right: 170px;
     }
 
+    a span.down {
+        display: block;
+    }
+
+    a span.up {
+        display: block;
+    }
+
     /* 2 メッセージ #message */
     #messege .text-img {
         width: 700px;
     }
 
     /* 3 About us #about */
-/*
+    /*
     #about {
         background-image: url(/images/bg_pc2.jpg);
     }
@@ -1306,7 +1314,7 @@ ul.sub-menu li {
     }
 
     /* 4 結果 #results */
-/*
+    /*
     #results {
         background-image: url(/images/bg_pc3.jpg);
         background-position: 0 55%;
@@ -1351,7 +1359,7 @@ ul.sub-menu li {
 
     /* 5 ブログ #blog */
 
-/*
+    /*
     #blog {
         background-image: url(/images/bg_pc4.jpg);
         background-position: 0 55%;
@@ -1398,7 +1406,7 @@ ul.sub-menu li {
     }
 
     /* 6 新歓情報 #recruit */
-/*
+    /*
     #recruit {
         background-image: url(/images/bg_pc5.jpg);
         background-position: 0 40%;
@@ -1436,7 +1444,7 @@ ul.sub-menu li {
     }
 
     /* 7 PV #movie */
-/*
+    /*
     #movie {
         background-image: url(/images/bg_pc6.jpg);
         background-position: 5% 10%;
@@ -1479,7 +1487,7 @@ ul.sub-menu li {
     }
 
     /* 8 photos #photos */
-/*
+    /*
     #photos {
         background-image: url(/images/bg_pc7.jpg);
     }
@@ -1510,7 +1518,7 @@ ul.sub-menu li {
     }
 
     #contact {
-/*        background-image: url(/images/bg_pc8.jpg);*/
+        /*        background-image: url(/images/bg_pc8.jpg);*/
         color: #BC005A;
     }
 
@@ -1580,9 +1588,21 @@ ul.sub-menu li {
         padding: 32px;
         font-size: 20px;
     }
-    
+
     #loader {
+        width: 700px;
         width: 700px;
     }
 
 }
+
+/*
+
+.section img {
+  opacity: 0;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+}
+.section.lazyloaded img.lazyloaded {
+  opacity: 1;
+}*/
