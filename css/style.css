@@ -526,7 +526,7 @@ a span.down {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
-    display: none;
+    display: block;
 }
 
 a span.up {
@@ -541,7 +541,7 @@ a span.up {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     box-sizing: border-box;
-    display: none;
+    display: block;
 }
 
 /* bx-slider */
